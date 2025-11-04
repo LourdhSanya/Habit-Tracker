@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌈 Habit Tracker</h1>
+    <p id="date"></p>
+
+    <!-- Progress Bar Section -->
+    <div class="progress-section">
+      <p id="progressText">0% Completed</p>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <!-- Motivation Quote -->
+    <blockquote id="quote">"Small steps every day lead to big changes."</blockquote>
+
+    <div class="input-section">
+      <input type="text" id="habitInput" placeholder="Enter your habit..." />
+      <input type="time" id="habitTime" />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="habitList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

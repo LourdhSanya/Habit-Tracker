@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 420px;
+  transition: 0.3s;
+}
+
+h1 {
+  font-size: 26px;
+  color: #3c1361;
+  margin-bottom: 10px;
+}
+
+#date {
+  font-size: 15px;
+  color: #6b4f8a;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="time"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #f1f1f1;
+  font-size: 15px;
+}
+
+#habitInput {
+  width: 55%;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #8e24aa;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a1b9a;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+li {
+  background: #ede7f6;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habit-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.habit-info span {
+  font-weight: 600;
+  color: #3c1361;
+}
+
+.habit-info small {
+  font-size: 13px;
+  color: #7b699d;
+}
+
+.action-buttons button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* ========== Progress Bar ========== */
+.progress-section {
+  margin: 15px 0 25px 0;
+  text-align: center;
+}
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 20px;
+  height: 12px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #8e24aa, #f06292);
+  transition: width 0.4s ease-in-out;
+  border-radius: 20px;
+}
+
+/* ========== Motivation Quote ========== */
+blockquote {
+  font-style: italic;
+  color: #4b0082;
+  background: #f3e5f5;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
